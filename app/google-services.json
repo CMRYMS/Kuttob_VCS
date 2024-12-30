@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "164446270656",
+    "project_id": "kuttob-14976",
+    "storage_bucket": "kuttob-14976.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164446270656:android:ffbb740e28ef77195c6925",
+        "android_client_info": {
+          "package_name": "com.example.kuttob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi-W2iODZ0Me40ZhQHKFdUG25DwWwzz9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

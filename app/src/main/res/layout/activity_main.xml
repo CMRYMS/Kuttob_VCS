@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ddd3"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/romanceCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:text="Romance"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/romancescroll"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/romancescroll"
+                android:layout_width="400dp"
+                android:layout_height="247dp"
+                android:background="#CCBCAF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/romanceCategory">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/normalpeople"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/r1" />
+
+                    <ImageButton
+                        android:id="@+id/mebeforeyou"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/normalpeople"
+                        app:layout_constraintTop_toTopOf="@id/normalpeople"
+                        app:srcCompat="@drawable/r2" />
+
+                    <ImageButton
+                        android:id="@+id/gonegirl"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/mebeforeyou"
+                        app:layout_constraintTop_toTopOf="@id/mebeforeyou"
+                        app:srcCompat="@drawable/r3" />
+
+                    <ImageButton
+                        android:id="@+id/biglittlelies"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/gonegirl"
+                        app:layout_constraintTop_toTopOf="@id/gonegirl"
+                        app:srcCompat="@drawable/r4" />
+
+                    <ImageButton
+                        android:id="@+id/evelynhugo"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/biglittlelies"
+                        app:layout_constraintTop_toTopOf="@id/biglittlelies"
+                        app:srcCompat="@drawable/r5" />
+
+                    <ImageButton
+                        android:id="@+id/lookingforalaska"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/evelynhugo"
+                        app:layout_constraintTop_toTopOf="@id/evelynhugo"
+                        app:srcCompat="@drawable/r6" />
+
+                    <ImageButton
+                        android:id="@+id/afteryou"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/lookingforalaska"
+                        app:layout_constraintTop_toTopOf="@id/lookingforalaska"
+                        app:srcCompat="@drawable/r7" />
+
+                    <ImageButton
+                        android:id="@+id/sixofcrows"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/afteryou"
+                        app:layout_constraintTop_toTopOf="@id/afteryou"
+                        app:srcCompat="@drawable/r8" />
+
+                    <ImageButton
+                        android:id="@+id/courtroses"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/sixofcrows"
+                        app:layout_constraintTop_toTopOf="@id/sixofcrows"
+                        app:srcCompat="@drawable/r9" />
+
+                    <ImageButton
+                        android:id="@+id/milkandhoney"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/courtroses"
+                        app:layout_constraintTop_toTopOf="@id/courtroses"
+                        app:srcCompat="@drawable/r10" />
+
+                    <ImageButton
+                        android:id="@+id/frankenstein"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/milkandhoney"
+                        app:layout_constraintTop_toTopOf="@id/milkandhoney"
+                        app:srcCompat="@drawable/r11" />
+
+                    <ImageButton
+                        android:id="@+id/atonement"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/frankenstein"
+                        app:layout_constraintTop_toTopOf="@id/frankenstein"
+                        app:srcCompat="@drawable/r12" />
+
+                    <ImageButton
+                        android:id="@+id/enduringlove"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/atonement"
+                        app:layout_constraintTop_toTopOf="@id/atonement"
+                        app:srcCompat="@drawable/r13" />
+
+                    <ImageButton
+                        android:id="@+id/brighteststar"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/enduringlove"
+                        app:layout_constraintTop_toTopOf="@id/enduringlove"
+                        app:srcCompat="@drawable/r14" />
+
+
+                    <ImageButton
+                        android:id="@+id/wutheringheights"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/brighteststar"
+                        app:layout_constraintTop_toTopOf="@id/brighteststar"
+                        app:srcCompat="@drawable/r15" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/scienceFictionCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Science Fiction"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@id/romanceCategory"
+                app:layout_constraintTop_toBottomOf="@id/romancescroll" />
+
+            <HorizontalScrollView
+                android:id="@+id/sciencefictionscroll"
+                android:layout_width="400dp"
+                android:layout_height="247dp"
+                android:background="#CCBCAF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scienceFictionCategory">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/go1984"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/s1" />
+
+                    <ImageButton
+                        android:id="@+id/animalfarm"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/go1984"
+                        app:layout_constraintTop_toTopOf="@id/go1984"
+                        app:srcCompat="@drawable/s2" />
+
+                    <ImageButton
+                        android:id="@+id/hpphilosepherstone"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/animalfarm"
+                        app:layout_constraintTop_toTopOf="@id/animalfarm"
+                        app:srcCompat="@drawable/s3" />
+
+                    <ImageButton
+                        android:id="@+id/fantasticbeasts"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/hpphilosepherstone"
+                        app:layout_constraintTop_toTopOf="@id/hpphilosepherstone"
+                        app:srcCompat="@drawable/s4" />
+
+                    <ImageButton
+                        android:id="@+id/gameofthrones"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/fantasticbeasts"
+                        app:layout_constraintTop_toTopOf="@id/fantasticbeasts"
+                        app:srcCompat="@drawable/s5" />
+
+                    <ImageButton
+                        android:id="@+id/hpchamberofsecrets"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/gameofthrones"
+                        app:layout_constraintTop_toTopOf="@id/gameofthrones"
+                        app:srcCompat="@drawable/s6" />
+
+                    <ImageButton
+                        android:id="@+id/hpprisoner"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/hpchamberofsecrets"
+                        app:layout_constraintTop_toTopOf="@id/hpchamberofsecrets"
+                        app:srcCompat="@drawable/s7" />
+
+                    <ImageButton
+                        android:id="@+id/nightcircus"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/hpprisoner"
+                        app:layout_constraintTop_toTopOf="@id/hpprisoner"
+                        app:srcCompat="@drawable/s8" />
+
+                    <ImageButton
+                        android:id="@+id/hporder"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/nightcircus"
+                        app:layout_constraintTop_toTopOf="@id/nightcircus"
+                        app:srcCompat="@drawable/s9" />
+
+                    <ImageButton
+                        android:id="@+id/hpgobletoffire"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/hporder"
+                        app:layout_constraintTop_toTopOf="@id/hporder"
+                        app:srcCompat="@drawable/s10" />
+
+                    <ImageButton
+                        android:id="@+id/hobbit"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/hpgobletoffire"
+                        app:layout_constraintTop_toTopOf="@id/hpgobletoffire"
+                        app:srcCompat="@drawable/s11" />
+
+                    <ImageButton
+                        android:id="@+id/lordofrings"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/hobbit"
+                        app:layout_constraintTop_toTopOf="@id/hobbit"
+                        app:srcCompat="@drawable/s12" />
+
+                    <ImageButton
+                        android:id="@+id/hpdeathlyhollows"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/lordofrings"
+                        app:layout_constraintTop_toTopOf="@id/lordofrings"
+                        app:srcCompat="@drawable/s13" />
+
+                    <ImageButton
+                        android:id="@+id/hpcursedchild"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/hpdeathlyhollows"
+                        app:layout_constraintTop_toTopOf="@id/hpdeathlyhollows"
+                        app:srcCompat="@drawable/s14" />
+
+
+                    <ImageButton
+                        android:id="@+id/thebookthief"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/hpcursedchild"
+                        app:layout_constraintTop_toTopOf="@id/hpcursedchild"
+                        app:srcCompat="@drawable/s15" />
+
+                    <ImageButton
+                        android:id="@+id/vicious"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/thebookthief"
+                        app:layout_constraintTop_toTopOf="@id/thebookthief"
+                        app:srcCompat="@drawable/s16" />
+
+                    <ImageButton
+                        android:id="@+id/dracula"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/vicious"
+                        app:layout_constraintTop_toTopOf="@id/vicious"
+                        app:srcCompat="@drawable/s17" />
+
+                    <ImageButton
+                        android:id="@+id/fahrenhiet451"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/dracula"
+                        app:layout_constraintTop_toTopOf="@id/dracula"
+                        app:srcCompat="@drawable/s18" />
+
+                    <ImageButton
+                        android:id="@+id/vengful"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/fahrenhiet451"
+                        app:layout_constraintTop_toTopOf="@id/fahrenhiet451"
+                        app:srcCompat="@drawable/s19" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/teenCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Teen Young Adult"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@id/scienceFictionCategory"
+                app:layout_constraintTop_toBottomOf="@id/sciencefictionscroll" />
+
+            <HorizontalScrollView
+                android:id="@+id/teenscroll"
+                android:layout_width="400dp"
+                android:layout_height="247dp"
+                android:background="#CCBCAF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/teenCategory">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/awrinkleintime"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/t1" />
+
+                    <ImageButton
+                        android:id="@+id/missperegrines"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/awrinkleintime"
+                        app:layout_constraintTop_toTopOf="@id/awrinkleintime"
+                        app:srcCompat="@drawable/t2" />
+
+                    <ImageButton
+                        android:id="@+id/prideandpredujice"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/missperegrines"
+                        app:layout_constraintTop_toTopOf="@id/missperegrines"
+                        app:srcCompat="@drawable/t3" />
+
+                    <ImageButton
+                        android:id="@+id/crookedkingdom"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/prideandpredujice"
+                        app:layout_constraintTop_toTopOf="@id/prideandpredujice"
+                        app:srcCompat="@drawable/t4" />
+
+                    <ImageButton
+                        android:id="@+id/stormbreaker"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/crookedkingdom"
+                        app:layout_constraintTop_toTopOf="@id/crookedkingdom"
+                        app:srcCompat="@drawable/t5" />
+
+                    <ImageButton
+                        android:id="@+id/caraval"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/stormbreaker"
+                        app:layout_constraintTop_toTopOf="@id/stormbreaker"
+                        app:srcCompat="@drawable/t6" />
+
+                    <ImageButton
+                        android:id="@+id/fallenkingdoms"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/caraval"
+                        app:layout_constraintTop_toTopOf="@id/caraval"
+                        app:srcCompat="@drawable/t7" />
+
+                    <ImageButton
+                        android:id="@+id/bridgetoterebithia"
+                        android:layout_width="142dp"
+                        android:layout_height="220dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/fallenkingdoms"
+                        app:layout_constraintTop_toTopOf="@id/fallenkingdoms"
+                        app:srcCompat="@drawable/t8" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#e9ddd3"
+        android:text="Exit"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cart"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#CCBCAF"
+        android:text="Cart                                            "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
